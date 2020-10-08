@@ -29,7 +29,7 @@ if __name__ == '__main__':
     mount_path = app_path + "/data"
     
     
-    docker_command = "docker run --runtime nvidia -it  --rm  -v {}:/app/chooch_ai_on_prem/data -p 8000:8000  {} python3 chooch_service.py".format( mount_path, docker_url)
+    docker_command = "docker run --runtime nvidia  --rm  -v {}:/app/chooch_ai_on_prem/data -p 8000:8000  {} python3 chooch_service.py".format( mount_path, docker_url)
     
                                                                                                                                    
     print(docker_command)                                                                                                                             

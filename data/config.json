@@ -1,6 +1,6 @@
 {
     "device_id": "aea2c8d4-e30d-46f5-bf1e-4dedf4884cf0",
-    "last_update": "2020-10-08 21:43:44",
+    "last_update": "2020-10-08 22:17:35",
     "models": [
         {
             "model_type": "object",
@@ -8,23 +8,23 @@
             "image_model": {
                 "files": [
                     {
-                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/3267/mymodel.onnx?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=%2B7bkf0EJBAJO3ZN9WF4116LgMuM%3D&Expires=1602798224",
+                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/3267/mymodel.onnx?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=rF8rgdtR3rgQ%2FoeTDvxsyKd9R3k%3D&Expires=1602800255",
                         "file_short_title": "mymodel.onnx"
                     },
                     {
-                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/3267/mymodel-synset.txt?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=Yd0ta1HLsmnPSgAc4BpAP8yyeiQ%3D&Expires=1602798224",
+                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/3267/mymodel-synset.txt?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=orvHFYrlXMnQ3Ej1cqxtWY6ZVnc%3D&Expires=1602800255",
                         "file_short_title": "mymodel-synset.txt"
                     },
                     {
-                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/3267/data.json?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=yYPGseaMkAzEzbMVjfvuONiMi2g%3D&Expires=1602798224",
+                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/3267/data.json?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=ZTgYP%2BXiNu814LoEv3aDZnrLokk%3D&Expires=1602800255",
                         "file_short_title": "data.json"
                     },
                     {
-                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/3267/mymodel-0000.params?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=CxA1CS%2BUFiG6LtEB8n63ayOhzGI%3D&Expires=1602798224",
+                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/3267/mymodel-0000.params?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=xklXaHWVQFl0NNsTgDc9a0BXVWw%3D&Expires=1602800255",
                         "file_short_title": "mymodel-0000.params"
                     },
                     {
-                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/3267/mymodel-symbol.json?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=aeUHigtMWzVImdI37N%2B4FwuG1W4%3D&Expires=1602798224",
+                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/3267/mymodel-symbol.json?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=DzsyVTF8%2FSqgFOlPMt0TVNFrjvE%3D&Expires=1602800255",
                         "file_short_title": "mymodel-symbol.json"
                     }
                 ],
@@ -34,23 +34,23 @@
             "model_title": "Mask Detection 1.1",
             "files": [
                 {
-                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/800/train/yolo_best.weights?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=dpzSk%2B7E9FsoBPO9SrHJk%2FfwKqc%3D&Expires=1602798224",
+                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/800/train/yolo_best.weights?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=wWiR%2FJFCuoyW7TpO%2FvmyNNLukcA%3D&Expires=1602800255",
                     "file_short_title": "yolo_best.weights"
                 },
                 {
-                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/800/data/class.names?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=VvMEDJxHWEIsdXma%2FMwgNbT5jGs%3D&Expires=1602798224",
+                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/800/data/class.names?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=OfBFjQsHYnrM77QELgoDjorUdmA%3D&Expires=1602800255",
                     "file_short_title": "class.names"
                 },
                 {
-                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/800/data/data.json?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=XheiVEwUwljV0IiWmlEp22u7G%2Fc%3D&Expires=1602798224",
+                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/800/data/data.json?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=hv4niOOM8Bk%2FRP%2Fm7rgfFcE5gHM%3D&Expires=1602800255",
                     "file_short_title": "data.json"
                 },
                 {
-                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/800/data/yolo.cfg?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=AsXa6HzfHTaCcjrbv0Y1T7%2FpVDY%3D&Expires=1602798224",
+                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/800/data/yolo.cfg?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=VGQVBgQjtcLW4aimfonWQWEVSTI%3D&Expires=1602800255",
                     "file_short_title": "yolo.cfg"
                 },
                 {
-                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/800/train/chart.jpg?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=R4iwgoYoopyWpZ7KDONSxvYLtOU%3D&Expires=1602798224",
+                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/800/train/chart.jpg?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=OBemHfJ%2F3y12SAdZdaj8xd22xCo%3D&Expires=1602800255",
                     "file_short_title": "chart.jpg"
                 }
             ]
@@ -69,5 +69,11 @@
             "camera_id": 101
         }
     ],
-    "api_key": null
+    "device_info": {
+        "device_docker": "choochai/chooch_ai-x86-64:1.1",
+        "device_title": "chooch_demo",
+        "device_description": "",
+        "device_type": "t4",
+        "device_platform": "pc"
+    }
 }
