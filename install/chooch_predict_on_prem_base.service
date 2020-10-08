@@ -1,0 +1,14 @@
+[Unit]
+Description = Chooch AI On Prem 
+After = network.target
+
+[Service]
+Type=simple
+ExecStart={app_path}/chooch_run.sh
+Restart=always
+RestartSec=40
+WorkingDirectory={app_path}
+User={user_name}
+
+[Install]
+WantedBy = multi-user.target
