@@ -1,4 +1,79 @@
 {
-    "device_id": "-",
-   
+    "device_id": "aea2c8d4-e30d-46f5-bf1e-4dedf4884cf0",
+    "last_update": "2020-10-08 21:25:38",
+    "models": [
+        {
+            "model_type": "object",
+            "model_id": 800,
+            "image_model": {
+                "files": [
+                    {
+                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/3267/mymodel.onnx?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=9W55uuBN5WGBW1HxgdHmX232gr0%3D&Expires=1602797138",
+                        "file_short_title": "mymodel.onnx"
+                    },
+                    {
+                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/3267/mymodel-synset.txt?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=FIyxks1cHPkCt7P4dOEJhiaQQY8%3D&Expires=1602797138",
+                        "file_short_title": "mymodel-synset.txt"
+                    },
+                    {
+                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/3267/data.json?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=pLsuzio9TFNGMQc0u%2FW4tARVkD0%3D&Expires=1602797138",
+                        "file_short_title": "data.json"
+                    },
+                    {
+                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/3267/mymodel-0000.params?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=RVJ9J9BMWyQXszZt1coR7D6OT1I%3D&Expires=1602797138",
+                        "file_short_title": "mymodel-0000.params"
+                    },
+                    {
+                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/3267/mymodel-symbol.json?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=QtLdLKgvfTt4NTmuQrLzV9%2FT01U%3D&Expires=1602797138",
+                        "file_short_title": "mymodel-symbol.json"
+                    }
+                ],
+                "model_id": 3267,
+                "model_title": "Mask Detection 1.1"
+            },
+            "model_title": "Mask Detection 1.1",
+            "files": [
+                {
+                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/800/train/yolo_best.weights?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=oUpMIaPdosB2V05Wd4v18pGHa%2B0%3D&Expires=1602797138",
+                    "file_short_title": "yolo_best.weights"
+                },
+                {
+                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/800/data/class.names?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=RH8cbah7IzfpMVc4sbpEghPnbJE%3D&Expires=1602797138",
+                    "file_short_title": "class.names"
+                },
+                {
+                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/800/data/data.json?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=8JGmJLKplOvEmDnmYyXdPijC0FI%3D&Expires=1602797138",
+                    "file_short_title": "data.json"
+                },
+                {
+                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/800/data/yolo.cfg?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=fLa8jRdenQqdGYH2IYnJ0MWiHkM%3D&Expires=1602797138",
+                    "file_short_title": "yolo.cfg"
+                },
+                {
+                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/800/train/chart.jpg?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=q5dElEHd350fth8qJdej5hx9JuE%3D&Expires=1602797138",
+                    "file_short_title": "chart.jpg"
+                }
+            ]
+        }
+    ],
+    "camera_feeds": [
+        {
+            "camera_feed_url": "http://wmccpinetop.axiscam.net/mjpg/video.mjpg",
+            "camera_name": "public",
+            "models_list": [
+                {
+                    "model_type": "object",
+                    "model_id": 800
+                }
+            ],
+            "camera_id": 101
+        }
+    ],
+    "device_info": {
+        "device_docker": "choochai/chooch_ai-x86-64:1.1",
+        "device_title": "chooch_demo",
+        "device_description": "",
+        "device_type": "t4",
+        "device_platform": "pc"
+    }
 }

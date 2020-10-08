@@ -3,7 +3,7 @@ import os
 import json
 
 
-
+import requests
 
 
 
@@ -24,12 +24,12 @@ if __name__ == '__main__':
     with open("{}/data/config.json".format(app_path)) as f:        
             json_data = json.load(f)
 
-    docker_url = json_data["docker_url"]
+    docker_url = json_data["device_info"]["device_docker"]
     
     mount_path = app_path + "/data"
     
     
-    docker_command = "docker run --runtime nvidia -it  --rm  -v {}:/app/chooch_ai_on_prem/data -p 8000:8000  {} chooch_service.py".format(docker_url, mount_path)
+    docker_command = "docker run --runtime nvidia -it  --rm  -v {}:/app/chooch_ai_on_prem/data -p 8000:8000  {} chooch_service.py".format( mount_path, docker_url)
     
                                                                                                                                    
     print(docker_command)                                                                                                                             
