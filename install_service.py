@@ -7,13 +7,13 @@ import sys
 
 import json
 
-
+import requests
 import sys 
   
 # total arguments 
 n_count = len(sys.argv) 
 
-
+from datetime import datetime
 
 try:
     app_path = os.path.dirname(os.path.realpath(__file__))
@@ -101,7 +101,7 @@ app_path = os.path.dirname(os.path.realpath(__file__))
 if n_count == 1:    
       device_id = input("Please enter device_id: ")        
 else: 
-      device_id = str(sys.argv[1])strip()
+      device_id = str(sys.argv[1]).strip()
         
         
         
