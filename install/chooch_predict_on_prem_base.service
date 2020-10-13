@@ -1,14 +1,21 @@
 [Unit]
-Description = Chooch AI On Prem 
-After = network.target
+Description=Chooch AI On Prem 
+After=docker.service
+Requires=docker.service
 
 [Service]
-Type=simple
-ExecStart={app_path}/chooch_run.sh
+TimeoutStartSec=0
 Restart=always
-RestartSec=40
-WorkingDirectory={app_path}
+ExecStartPre=-/usr/bin/docker exec %n stop
+ExecStartPre=-/usr/bin/docker rm %n
+ExecStartPre=/usr/bin/docker pull {docker_name}
+ExecStart=/usr/bin/docker run --runtime nvidia --rm --name %n \
+    -v {data_path}:/app/chooch_ai_on_prem/data \
+    -p 8000:8000 \
+    {docker_name}
+    
 User={user_name}
 
+
 [Install]
-WantedBy = multi-user.target
+WantedBy=default.target

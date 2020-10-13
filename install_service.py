@@ -72,6 +72,24 @@ def replace_value_2(input_file, output_file, find_string_val, replace_string_val
     fin.close()
     fout.close()    
     
+def replace_value_3(input_file, output_file, find_string_val, replace_string_val, find_string_val_2, replace_string_val_2, find_string_val_3, replace_string_val_3):
+    
+    #input file
+    fin = open(input_file, "rt")
+    #output file to write the result to
+    fout = open(output_file, "wt")
+    #for each line in the input file
+    for line in fin:
+         #read replace the string and write to output file
+         fout.write(line.replace(find_string_val, replace_string_val).replace(find_string_val_2, replace_string_val_2).replace(find_string_val_3, replace_string_val_3))
+      
+    #close input and output files
+    
+    
+
+    fin.close()
+    fout.close()    
+    
     
 app_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -112,7 +130,7 @@ with open("{}/data/config.json".format(app_path), 'w', encoding='utf-8') as f:
 
 user_name = getpass.getuser()
 
-replace_value_2("{}/install/chooch_predict_on_prem_base.service".format(app_path),  "{}/chooch_predict_on_prem.service".format(app_path),   "{app_path}", app_path, "{user_name}", user_name)
+replace_value_3("{}/install/chooch_predict_on_prem_base.service".format(app_path),  "{}/chooch_predict_on_prem.service".format(app_path),   "{data_path}", app_path + "/data", "{user_name}", user_name)
 
 
 # get user name
@@ -133,9 +151,12 @@ os.system("sudo chmod 666 /var/run/docker.sock")
 # give excute rights to choochrun.sh
 os.system("sudo chmod +x chooch_run.sh")
 
+# copy database
+os.system("sudo cp chooch_predict_on_prem.service /etc/systemd/system")
+
 
 #copy service file
-os.system("sudo cp chooch_predict_on_prem.service /etc/systemd/system")
+os.system("sudo cp install/chooch_database.db data/database")
 
 
 #Give rights to service
