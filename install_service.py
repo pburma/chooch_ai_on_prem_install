@@ -130,7 +130,7 @@ with open("{}/data/config.json".format(app_path), 'w', encoding='utf-8') as f:
 
 user_name = getpass.getuser()
 
-replace_value_3("{}/install/chooch_predict_on_prem_base.service".format(app_path),  "{}/chooch_predict_on_prem.service".format(app_path),   "{data_path}", app_path + "/data", "{user_name}", user_name)
+replace_value_3("{}/install/chooch_predict_on_prem_base.service".format(app_path),  "{}/chooch_predict_on_prem.service".format(app_path),   "{data_path}", app_path + "/data", "{user_name}", user_name, "{docker_name}", data_new_info["device_info"]["device_docker"])
 
 
 # get user name
