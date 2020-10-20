@@ -148,6 +148,10 @@ replace_value("install/chooch_run_base.sh",  "chooch_run.sh",   "{app_path}", ap
 os.system("sudo chmod 666 /var/run/docker.sock")
 
 
+# pull docker
+os.system("sudo docker pull {}".format(data_new_info["device_info"]["device_docker"])
+
+
 # give excute rights to choochrun.sh
 os.system("sudo chmod +x chooch_run.sh")
 
