@@ -149,7 +149,7 @@ os.system("sudo chmod 666 /var/run/docker.sock")
 
 
 # pull docker
-os.system("sudo docker pull {}".format(data_new_info["device_info"]["device_docker"])
+os.system("sudo docker pull {}".format(data_new_info["device_info"]["device_docker"]))
 
 
 # give excute rights to choochrun.sh
