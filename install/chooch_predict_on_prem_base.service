@@ -4,13 +4,11 @@ After=docker.service
 Requires=docker.service
 
 [Service]
-TimeoutStartSec=0
 Restart=always
-ExecStartPre=-/usr/bin/docker exec %n stop
-ExecStartPre=-/usr/bin/docker rm %n
+RestartSec=30
 ExecStartPre=/usr/bin/docker pull {docker_name}
 ExecStart=/usr/bin/docker run --runtime nvidia --rm --name %n \
-    -v {data_path}:/app/chooch_ai_on_prem/data \
+    -v {data_path}:/app/chooch_ai_on_prem/data --log-opt max-size=50m  \
     -p 8000:8000 {docker_name} chooch_run.sh
     
     
