@@ -5,11 +5,22 @@ Requires=docker.service
 
 [Service]
 Restart=always
+<<<<<<< HEAD
 RestartSec=30
+=======
+>>>>>>> 9d5fe03b10f42fe568bf775f243c4a7382a2b581
 ExecStartPre=/usr/bin/docker pull {docker_name}
+ExecStartPre=/usr/bin/docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
 ExecStart=/usr/bin/docker run --runtime nvidia --rm --name %n \
+<<<<<<< HEAD
     -v {data_path}:/app/chooch_ai_on_prem/data --log-opt max-size=50m  \
     -p 8000:8000 {docker_name} chooch_run.sh
+=======
+    -v {data_path}:/app/chooch_ai_on_prem/data \
+    -p 8000:8000 {docker_name} ./chooch_run.sh
+    
+ExecStop=/usr/bin/docker stop %n
+>>>>>>> 9d5fe03b10f42fe568bf775f243c4a7382a2b581
     
     
 User={user_name}
