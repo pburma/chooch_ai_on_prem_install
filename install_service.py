@@ -146,7 +146,46 @@ with open("{}/data/config.json".format(app_path), 'w', encoding='utf-8') as f:
 
 user_name = getpass.getuser()
 
-replace_value_3("{}/install/chooch_predict_on_prem_base.service".format(app_path),  "{}/chooch_predict_on_prem.service".format(app_path),   "{data_path}", app_path + "/data", "{user_name}", user_name, "{docker_name}", data_new_info["device_info"]["device_docker"])
+# create parameters
+
+replacement_list = []
+
+# run command
+
+device_platform = str(model_data["device_info"]["device_platform"])
+
+if device_platform == "jetson":
+    key_val = "--runtime nvidia"
+else:
+    key_val = "--gpus all"
+    
+
+replacement_item = {}
+replacement_item["key_id"] = "{run_command}"
+replacement_item["key_val"] = key_val
+replacement_list.append(replacement_item)
+
+
+replacement_item = {}
+replacement_item["key_id"] = "{data_path}"
+replacement_item["key_val"] =app_path + "/data"
+replacement_list.append(replacement_item)
+
+
+replacement_item = {}
+replacement_item["key_id"] = "{user_name}"
+replacement_item["key_val"] = user_name
+replacement_list.append(replacement_item)
+
+
+replacement_item = {}
+replacement_item["key_id"] = "{docker_name}"
+replacement_item["key_val"] = str(data_new_info["device_info"]["device_docker"])
+replacement_list.append(replacement_item)
+
+
+
+#replace_value_3("{}/install/chooch_predict_on_prem_base.service".format(app_path),  "{}/chooch_predict_on_prem.service".format(app_path),   "{data_path}", app_path + "/data", "{user_name}", user_name, "{docker_name}", data_new_info["device_info"]["device_docker"])
 
 
 # get user name
