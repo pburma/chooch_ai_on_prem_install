@@ -99,10 +99,10 @@ def replace_value_4(input_file, output_file, replacement_list):
     
     #input file
     with open(input_file) as infile, open(output_file, 'w') as outfile:
-    for line in infile:
-        for item in replacement_list:
-            line = line.replace(item["key_id"], item["key_val"])
-        outfile.write(line)
+        for line in infile:
+            for item in replacement_list:
+                line = line.replace(item["key_id"], item["key_val"])
+            outfile.write(line)
         
         
     
@@ -196,7 +196,7 @@ replacement_list.append(replacement_item)
 
 
 
-replace_value_4("{}/chooch_predict_on_prem.service".format(app_path),  "{}/chooch_predict_on_prem.service".format(app_path), replacement_list)
+replace_value_4("{}/install/chooch_predict_on_prem_base.service".format(app_path),  "{}/chooch_predict_on_prem.service".format(app_path), replacement_list)
 
 
     
