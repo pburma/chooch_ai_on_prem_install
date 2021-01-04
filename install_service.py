@@ -15,6 +15,11 @@ n_count = len(sys.argv)
 
 from datetime import datetime
 
+
+import os.path
+
+
+
 try:
     app_path = os.path.dirname(os.path.realpath(__file__))
 except:
