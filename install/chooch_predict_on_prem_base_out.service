@@ -1,0 +1,20 @@
+[Unit]
+Description=Chooch AI On Prem 
+After=docker.service
+Requires=docker.service
+
+[Service]
+Restart=always
+RestartSec=25
+ExecStart=/usr/bin/docker run test_88888 --rm --name %n \
+-v {data_path}:/app/chooch_ai_on_prem/data -v /var/run/docker.sock:/var/run/docker.sock  -v /usr/bin/docker:/usr/bin/docker --log-opt max-size=50m --entrypoint /app/chooch_ai_on_prem/chooch_run.sh   \
+-p 8000:8000 {docker_name} ./chooch_run.sh
+    
+ExecStop=/usr/bin/docker stop %n
+    
+    
+User={user_name}
+
+
+[Install]
+WantedBy=default.target

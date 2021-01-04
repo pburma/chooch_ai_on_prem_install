@@ -95,6 +95,17 @@ def replace_value_3(input_file, output_file, find_string_val, replace_string_val
     fin.close()
     fout.close()    
     
+def replace_value_4(input_file, output_file, replacement_list):
+    
+    #input file
+    with open(input_file) as infile, open(output_file, 'w') as outfile:
+    for line in infile:
+        for item in replacement_list:
+            line = line.replace(item["key_id"], item["key_val"])
+        outfile.write(line)
+        
+        
+    
     
 app_path = os.path.dirname(os.path.realpath(__file__))
 
