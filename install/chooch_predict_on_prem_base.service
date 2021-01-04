@@ -6,7 +6,7 @@ Requires=docker.service
 [Service]
 Restart=always
 RestartSec=25
-ExecStart=/usr/bin/docker run --runtime nvidia --rm --name %n \
+ExecStart=/usr/bin/docker run {run_command} --rm --name %n \
 -v {data_path}:/app/chooch_ai_on_prem/data -v /var/run/docker.sock:/var/run/docker.sock  -v /usr/bin/docker:/usr/bin/docker --log-opt max-size=50m --entrypoint /app/chooch_ai_on_prem/chooch_run.sh   \
 -p 8000:8000 {docker_name} ./chooch_run.sh
     
