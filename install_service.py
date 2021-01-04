@@ -171,7 +171,8 @@ os.system("sudo cp chooch_predict_on_prem.service /etc/systemd/system")
 
 
 #copy service file
-os.system("sudo cp install/chooch_database.db data/database")
+if os.path.isfile("data/database/chooch_database.db") == False:
+    os.system("sudo cp install/chooch_database.db data/database")
 
 
 #Give rights to service
