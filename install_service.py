@@ -195,8 +195,15 @@ replacement_list.append(replacement_item)
 #replace_value_2("{}/chooch_predict_on_prem.service".format(app_path),  "{}/chooch_predict_on_prem.service".format(app_path),   "{user_name}", user_name)
 
 
+
+replace_value_4("{}/chooch_predict_on_prem.service".format(app_path),  "{}/chooch_predict_on_prem.service".format(app_path), replacement_list)
+
+
     
-replace_value("install/chooch_run_base.sh",  "chooch_run.sh",   "{app_path}", app_path)    
+replace_value("install/chooch_run_base.sh",  "chooch_run.sh",   "{app_path}", app_path) 
+
+
+
 
 
 # give docker right
