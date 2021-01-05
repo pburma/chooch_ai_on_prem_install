@@ -181,6 +181,10 @@ replacement_list.append(replacement_item)
 replacement_item = {}
 replacement_item["key_id"] = "{docker_name}"
 replacement_item["key_val"] = str(data_new_info["device_info"]["device_docker"])
+
+if device_platform == "jetson":
+    replacement_item["key_val"] = "choochai/chooch_ai-arm64:latest"
+    
 replacement_list.append(replacement_item)
 
 
