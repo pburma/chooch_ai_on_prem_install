@@ -1,27 +1,27 @@
 {
     "device_id": "a955fda9-600a-4db0-9349-dbdd77a6fe26",
-    "last_update": "2021-01-04 23:58:52",
+    "last_update": "2021-01-05 17:18:39",
     "models": [
         {
             "files": [
                 {
-                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/1134/train/yolo_best.weights?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=Z42xQI5AjWjOBJAuUGqfBWtjXcM%3D&Expires=1610409532",
+                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/1134/train/yolo_best.weights?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=2guOV9iTuZ2kv0Z3evZ%2BnT8FiOw%3D&Expires=1610471919",
                     "file_short_title": "yolo_best.weights"
                 },
                 {
-                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/1134/data/class.names?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=fWqpvoLeZOB%2BNZcjHlZYkOPrVus%3D&Expires=1610409532",
+                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/1134/data/class.names?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=GiMoGu2FZYk9xjHgPFZY16ldFws%3D&Expires=1610471919",
                     "file_short_title": "class.names"
                 },
                 {
-                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/1134/data/data.json?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=%2Fr91e4d%2F3eu47Roa3g%2FU7JBT588%3D&Expires=1610409532",
+                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/1134/data/data.json?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=9f%2BCLbumXGG92F5%2B29SxBerNEn8%3D&Expires=1610471919",
                     "file_short_title": "data.json"
                 },
                 {
-                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/1134/data/yolo.cfg?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=qqzk%2Bb8co%2FmrbgcucgRuJDD1QpQ%3D&Expires=1610409532",
+                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/1134/data/yolo.cfg?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=xgWMYWRsIUUs%2B2OPwHkWmptYPPA%3D&Expires=1610471919",
                     "file_short_title": "yolo.cfg"
                 },
                 {
-                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/1134/train/chart.jpg?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=AmiEm%2F6O3JQZLe9fYEAse6%2BaO%2B4%3D&Expires=1610409532",
+                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/1134/train/chart.jpg?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=0d%2FSaaQWhJF7vvQmUXSaziI%2Fmdc%3D&Expires=1610471919",
                     "file_short_title": "chart.jpg"
                 }
             ],
@@ -32,23 +32,23 @@
             "image_model": {
                 "files": [
                     {
-                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/0/mymodel.onnx?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=DLtX5krhmCajaFNeviyYSgnZOzw%3D&Expires=1610409532",
+                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/0/mymodel.onnx?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=wEFcXmpC2ot2eK%2BcCK10DwbuWDs%3D&Expires=1610471919",
                         "file_short_title": "mymodel.onnx"
                     },
                     {
-                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/0/mymodel-synset.txt?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=pyRHYK2hQs35Rq8FHjctoy9S%2FXk%3D&Expires=1610409532",
+                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/0/mymodel-synset.txt?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=olEAmdMUvV6vjQycZTdcfQosebk%3D&Expires=1610471919",
                         "file_short_title": "mymodel-synset.txt"
                     },
                     {
-                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/0/data.json?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=C41xCWleLn%2FUOLRB2DqW%2BbiPP3Q%3D&Expires=1610409532",
+                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/0/data.json?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=s7fPXLOytOMZ907I2nj1EAsZVi4%3D&Expires=1610471919",
                         "file_short_title": "data.json"
                     },
                     {
-                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/0/mymodel-0000.params?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=FjpiyUMLOqe97%2Fq%2BghNN6o4uX5o%3D&Expires=1610409532",
+                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/0/mymodel-0000.params?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=YjLN7w%2F%2FAyLmie8VWNM3CDOUJAk%3D&Expires=1610471919",
                         "file_short_title": "mymodel-0000.params"
                     },
                     {
-                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/0/mymodel-symbol.json?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=7KPPb281QK6m6X24hV0adKN%2FmqE%3D&Expires=1610409532",
+                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/0/mymodel-symbol.json?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=RvvsYvd4R8ThTouQS8lqcVDtUTI%3D&Expires=1610471919",
                         "file_short_title": "mymodel-symbol.json"
                     }
                 ],

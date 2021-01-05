@@ -5,7 +5,7 @@ Requires=docker.service
 
 [Service]
 Restart=always
-RestartSec=25
+RestartSec=15
 ExecStart=/usr/bin/docker run {run_command} --rm --name %n \
 -v {data_path}:/app/chooch_ai_on_prem/data -v \
 /var/run/docker.sock:/var/run/docker.sock \
