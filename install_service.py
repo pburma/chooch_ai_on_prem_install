@@ -131,11 +131,15 @@ date_time = now.strftime("%Y-%m-%d %H:%M:%S")
 data_new_info = {}
 data_new_info["device_id"] = device_id
 
-data_new_info["last_update"] = str(date_time)
-data_new_info["models"] = model_data["models"]
-data_new_info["camera_feeds"] = model_data["cameras"]     
-data_new_info["device_info"] = model_data["device_info"]    
+try:
 
+    data_new_info["last_update"] = str(date_time)
+    data_new_info["models"] = model_data["models"]
+    data_new_info["camera_feeds"] = model_data["cameras"]     
+    data_new_info["device_info"] = model_data["device_info"]    
+except:
+    print("Invalid device_id !")
+    sys.exit()
 
 with open("{}/data/config.json".format(app_path), 'w', encoding='utf-8') as f:
               json.dump(data_new_info, f, ensure_ascii=False, indent=4)   
