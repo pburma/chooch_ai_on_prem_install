@@ -229,6 +229,10 @@ os.system("sudo cp chooch_predict_on_prem.service /etc/systemd/system")
 
 #copy service file
 if os.path.isfile("data/database/chooch_database.db") == False:
+    
+    if os.path.exists("data/database") == False:    
+         os.mkdir("data/database") 
+            
     os.system("sudo cp install/chooch_database.db data/database")
 
 
