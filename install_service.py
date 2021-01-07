@@ -231,7 +231,7 @@ if device_platform == "jetson":
 else:
     latest_docker_image = data_new_info["device_info"]["device_docker"]
     
-os.system("sudo docker pull {}".format(data_new_info["device_info"]["device_docker"]))
+os.system("sudo docker pull {}".format(latest_docker_image))
 
 
 # give excute rights to choochrun.sh
