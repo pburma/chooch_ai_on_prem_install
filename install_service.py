@@ -225,6 +225,12 @@ os.system("sudo chmod 666 /var/run/docker.sock")
 
 
 # pull docker
+
+if device_platform == "jetson":
+    latest_docker_image = "choochai/chooch_ai-arm64:latest"
+else:
+    latest_docker_image = data_new_info["device_info"]["device_docker"]
+    
 os.system("sudo docker pull {}".format(data_new_info["device_info"]["device_docker"]))
 
 
