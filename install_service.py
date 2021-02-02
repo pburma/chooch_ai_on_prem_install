@@ -156,12 +156,21 @@ replacement_list = []
 
 # run command
 
-device_platform = str(model_data["device_info"]["device_platform"])
+device_platform = str(model_data["device_info"]["device_platform"]).strip()
 
 if device_platform == "jetson":
+    
     key_val = "--runtime nvidia"
+    
+elif device_platform == "pc_cpu_intel":
+    
+    key_val = ""
+    
 else:
+    
     key_val = "--gpus all"
+    
+ 
     
 
 replacement_item = {}
@@ -186,8 +195,7 @@ replacement_item = {}
 replacement_item["key_id"] = "{docker_name}"
 replacement_item["key_val"] = str(data_new_info["device_info"]["device_docker"])
 
-if device_platform == "jetson":
-    replacement_item["key_val"] = "choochai/chooch_ai-arm64:latest"
+
     
 replacement_list.append(replacement_item)
 
@@ -226,10 +234,9 @@ os.system("sudo chmod 666 /var/run/docker.sock")
 
 # pull docker
 
-if device_platform == "jetson":
-    latest_docker_image = "choochai/chooch_ai-arm64:latest"
-else:
-    latest_docker_image = data_new_info["device_info"]["device_docker"]
+
+latest_docker_image = data_new_info["device_info"]["device_docker"]
+
     
 os.system("sudo docker pull {}".format(latest_docker_image))
 
