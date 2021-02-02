@@ -220,7 +220,7 @@ replace_value("{}/install/chooch_run_base.sh".format(app_path),  "chooch_run.sh"
 
 
 
-file_1 = open("{}/data/processor_platform.txt".format(app_path), "a")
+file_1 = open("{}/data/processor_platform.txt".format(app_path), "w")
     
 if device_platform == "pc_cpu_intel":
     
