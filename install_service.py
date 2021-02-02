@@ -216,9 +216,21 @@ replace_value_4("{}/install/chooch_predict_on_prem_base.service".format(app_path
 
 
     
-replace_value("install/chooch_run_base.sh",  "chooch_run.sh",   "{app_path}", app_path) 
+replace_value("{}/install/chooch_run_base.sh".format(app_path),  "chooch_run.sh",   "{app_path}", app_path) 
 
 
+
+file_1 = open("{}/data/processor_platform.txt".format(app_path), "a")
+    
+if device_platform == "pc_cpu_intel":
+    
+    file_1.write("cpu_intel")
+    
+else:
+    
+    file_1.write("gpu")
+
+    
 
 
 
