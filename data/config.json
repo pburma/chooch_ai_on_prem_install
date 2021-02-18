@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
     "device_id": "7f1bda8d-aa02-4028-860e-6684a8d3c04e",
     "last_update": "2021-02-18 21:37:50",
+=======
+    "device_id": "",
+    "last_update": "2021-02-18 00:36:59",
+>>>>>>> b6be8723ee6c54aef636e33a4742c02e76537645
     "models": [
         {
             "files": [
@@ -82,11 +87,20 @@
         "device_platform": "pc_cpu_intel"
     },
     "mqtt_info": {
+<<<<<<< HEAD
         "broker_password": "b'Q2hvb2NoQ2hvb2NoQ2hvb2No'",
         "publish_url": "/chooch",
         "broker_username": "chooch",
         "enable_tls": true,
         "broker_url": "ssl://b-b3a31208-bad7-4242-b6b3-6d0720a086e7-1.mq.us-east-1.amazonaws.com:8883",
         "broker_port": "8883"
+=======
+        "broker_password": "b'dGVzdDEyMw=='",
+        "publish_url": "/chooch/s1",
+        "broker_username": "test123",
+        "enable_tls": false,
+        "broker_url": "",
+        "broker_port": "1883"
+>>>>>>> b6be8723ee6c54aef636e33a4742c02e76537645
     }
 }
