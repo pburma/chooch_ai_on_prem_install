@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message><Key>modelsrun/0/mymodel-synset.txt</Key><RequestId>57AA20EC01EF1AF1</RequestId><HostId>fX0qys0gBhh+K4fIR41OmjNcWKB91yw+VTwZrRKgXhwsJW78ZtGRoUdV6c87KHwUyahqrtVO8lw=</HostId></Error>

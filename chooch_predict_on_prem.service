@@ -1,0 +1,23 @@
+[Unit]
+Description=Chooch AI On Prem 
+After=docker.service
+Requires=docker.service
+
+[Service]
+Restart=always
+RestartSec=15
+ExecStart=/usr/bin/docker run  --rm --name %n \
+-v D:\vantiq\repos\choochai\chooch_ai_on_prem_install/data:/app/chooch_ai_on_prem/data -v \
+/var/run/docker.sock:/var/run/docker.sock  \
+-v /usr/bin/docker:/usr/bin/docker --log-opt max-size=50m \
+--entrypoint /app/chooch_ai_on_prem/chooch_run.sh   \
+-p 8000:8000 -p 8001:8001 choochai/chooch_ai-x86-64-cpu:latest 
+    
+ExecStop=/usr/bin/docker stop %n
+    
+    
+User=patbu
+
+
+[Install]
+WantedBy=default.target

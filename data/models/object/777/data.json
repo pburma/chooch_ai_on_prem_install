@@ -1,0 +1,7 @@
+{
+    "image_classification_model_id": 0,
+    "model_id": 3,
+    "model_title": "general",
+    "on_prem": true,
+    "model_type": "yolov4-tiny"
+}

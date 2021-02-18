@@ -1,0 +1,92 @@
+{
+    "device_id": "7f1bda8d-aa02-4028-860e-6684a8d3c04e",
+    "last_update": "2021-02-17 23:45:32",
+    "models": [
+        {
+            "files": [
+                {
+                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/1299/train/yolo_best.weights?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=b4K%2BoIbkK%2BRKwN08XnC1SiKRn%2FQ%3D&Expires=1614210333",
+                    "file_short_title": "yolo_best.weights"
+                },
+                {
+                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/1299/data/class.names?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=18fPBz%2FePnD9DLKUKFQ8GJv39iQ%3D&Expires=1614210333",
+                    "file_short_title": "class.names"
+                },
+                {
+                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/1299/data/data.json?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=290HV2dWclR7smJE%2B13fKLkzNZE%3D&Expires=1614210333",
+                    "file_short_title": "data.json"
+                },
+                {
+                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/1299/data/yolo.cfg?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=H34m10sFgF9ZjYNemqxoYYoU7%2F4%3D&Expires=1614210333",
+                    "file_short_title": "yolo.cfg"
+                },
+                {
+                    "file_url": "https://chooch-object-detection-models.s3.amazonaws.com/object_detection/models_tf/1299/train/chart.jpg?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=1MBrJXQJz7dHuIcXEIbRSJUH1k8%3D&Expires=1614210333",
+                    "file_short_title": "chart.jpg"
+                }
+            ],
+            "model_id": 1299,
+            "child_model_info": null,
+            "perception_mode": "dense",
+            "model_title": "Human Fall Detection 2.0",
+            "model_type": "object",
+            "image_model": {
+                "files": [
+                    {
+                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/0/mymodel.onnx?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=RUH7XUw7glIePU94aqn9YoLOeL0%3D&Expires=1614210333",
+                        "file_short_title": "mymodel.onnx"
+                    },
+                    {
+                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/0/mymodel-synset.txt?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=6VyAd%2Bo6ReijFfDaqDRV4ITyYVQ%3D&Expires=1614210333",
+                        "file_short_title": "mymodel-synset.txt"
+                    },
+                    {
+                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/0/data.json?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=DIaob08G3K2Gbp2c7vpxqrOZdsI%3D&Expires=1614210333",
+                        "file_short_title": "data.json"
+                    },
+                    {
+                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/0/mymodel-0000.params?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=98z1Ihdh3ge2yRMWlh3G6jKHQFI%3D&Expires=1614210333",
+                        "file_short_title": "mymodel-0000.params"
+                    },
+                    {
+                        "file_url": "https://choochmodels2.s3.amazonaws.com/modelsrun/0/mymodel-symbol.json?AWSAccessKeyId=AKIAYYEUVOMLLCMRVINM&Signature=uYoViGIiD%2Br7nxq6ll%2FEM%2BbXIGk%3D&Expires=1614210333",
+                        "file_short_title": "mymodel-symbol.json"
+                    }
+                ],
+                "model_id": 0,
+                "model_title": "Human Fall Detection 2.0"
+            }
+        }
+    ],
+    "camera_feeds": [
+        {
+            "camera_feed_url": "http://192.168.2.28:8020/hls_569.m3u8",
+            "camera_name": "PatsMacCam",
+            "models_list": [
+                {
+                    "model_type": "object",
+                    "model_id": 1299,
+                    "perception_mode": "dense",
+                    "model_title": "Human Fall Detection 2.0"
+                }
+            ],
+            "camera_id": 615
+        }
+    ],
+    "device_info": {
+        "device_docker": "choochai/chooch_ai-x86-64-cpu:latest",
+        "device_title": "PatsOffice3",
+        "device_description": "",
+        "device_type": "inteli7+",
+        "api_end_point": "",
+        "device_platform": "pc_cpu_intel"
+    },
+    "mqtt_info": {
+        "broker_password": "b'dGVzdDEyMw=='",
+        "publish_url": "/chooch/s1",
+        "broker_username": "test123",
+        "enable_tls": false,
+        "broker_url": "public.vantiq.com",
+        "broker_port": "1883"
+    }
+}
