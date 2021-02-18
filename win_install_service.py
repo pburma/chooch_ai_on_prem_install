@@ -212,11 +212,11 @@ replacement_list.append(replacement_item)
 
 
 
-# replace_value_4("{}/install/chooch_predict_on_prem_base.service".format(app_path),  "{}/chooch_predict_on_prem.service".format(app_path), replacement_list)
+#replace_value_4("{}/install/chooch_predict_on_prem_base.service".format(app_path),  "{}/chooch_predict_on_prem.service".format(app_path), replacement_list)
 
 
     
-replace_value("{}/install/win_chooch_run_base.bat".format(app_path),  "win_chooch_run.bat",   "{app_path}", app_path) 
+#replace_value("{}/install/win_chooch_run_base.bat".format(app_path),  "win_chooch_run.bat",   "{app_path}", app_path) 
 
 
 

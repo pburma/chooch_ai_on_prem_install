@@ -43,8 +43,8 @@ if __name__ == '__main__':
         
     # run docker
     
-    docker_command = "docker run --runtime nvidia  --rm  -v {}:/app/chooch_ai_on_prem/data -p 8000:8000  {} python3 chooch_service.py".format(mount_path, docker_url)
-    
+    #docker_command = "docker run --rm  -v {}:/app/chooch_ai_on_prem/data -p 8000:8000  {} python3 chooch_service.py".format(mount_path, docker_url)
+    docker_command = "docker run -v D:\vantiq\repos\choochai\chooch_ai_on_prem_install\data:/app/chooch_ai_on_prem/data --log-opt max-size=50m --entrypoint /app/chooch_ai_on_prem/chooch_run.sh -p 8000:8000 -p 8001:8001 choochai/chooch_ai-x86-64-cpu:latest"
                                                                                                                                    
     print(docker_command)                                                                                                                             
     os.system(docker_command)
