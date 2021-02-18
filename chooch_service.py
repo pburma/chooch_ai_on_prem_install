@@ -23,7 +23,7 @@ if __name__ == '__main__':
     
    
     
-    
+    print(app_path)
             # first read device_info
     with open("{}/data/config.json".format(app_path)) as f:        
             json_data = json.load(f)
