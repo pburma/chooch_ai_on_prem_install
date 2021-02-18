@@ -1,5 +1,5 @@
 {
-    "device_id": "7f1bda8d-aa02-4028-860e-6684a8d3c04e",
+    "device_id": "",
     "last_update": "2021-02-18 00:36:59",
     "models": [
         {
@@ -86,7 +86,7 @@
         "publish_url": "/chooch/s1",
         "broker_username": "test123",
         "enable_tls": false,
-        "broker_url": "public.vantiq.com",
+        "broker_url": "",
         "broker_port": "1883"
     }
 }
